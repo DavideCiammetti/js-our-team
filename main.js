@@ -47,3 +47,16 @@ console.log(team[2]);
 console.log(team[3]);
 console.log(team[4]);
 console.log(team[5]);
+
+// creo elemeti per aggiungere le info al dom
+const containerInfo = document.createElement('div');
+const body = document.querySelector('body');
+
+for(let i = 0; i < team.length; i++){
+    const info = document.createElement('p');
+    info.innerHTML = `Nome: ${team[i].nome}////, Ruolo: ${team[i].ruolo}////, Foto: ${team[i].foto}`;
+    containerInfo.append(info);
+    console.log(containerInfo);
+}
+
+body.append(containerInfo);
