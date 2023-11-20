@@ -11,33 +11,33 @@ const team =  [
     {
         'nome': 'Wayne Barnett',
         'ruolo': 'Founder & CEO',
-        'foto': 'wayne-barnett-founder-ceo.jpg'
+        'foto': 'img/wayne-barnett-founder-ceo.jpg'
     },
 
     {
         'nome': 'Angela Caroll',
         'ruolo': 'Chief Editor',
-        'foto': 'angela-caroll-chief-editor.jpg'
+        'foto': 'img/angela-caroll-chief-editor.jpg'
     },
     {
         'nome': 'Walter Gordon',
         'ruolo': 'Office Manager',
-        'foto': 'walter-gordon-office-manager.jpg'
+        'foto': 'img/walter-gordon-office-manager.jpg'
     },
     {
         'nome': ' Angela Lopez',
         'ruolo': 'Social Media Manager',
-        'foto': 'angela-lopez-social-media-manager.jpg'
+        'foto': 'img/angela-lopez-social-media-manager.jpg'
     },
     {
         'nome': 'Scott Estrada',
         'ruolo': 'Developer',
-        'foto': 'scott-estrada-developer.jpg'
+        'foto': 'img/scott-estrada-developer.jpg'
     },
     {
         'nome': 'Barbara Ramos',
         'ruolo': 'Graphic Designer',
-        'foto': 'barbara-ramos-graphic-designer.jpg'
+        'foto': 'img/barbara-ramos-graphic-designer.jpg'
     }
 ];
 // stampo in conosle chiavie valori 
@@ -54,9 +54,10 @@ const body = document.querySelector('body');
 
 for(let i = 0; i < team.length; i++){
     const info = document.createElement('p');
-    info.innerHTML = `Nome: ${team[i].nome}////, Ruolo: ${team[i].ruolo}////, Foto: ${team[i].foto}`;
+    info.innerHTML = `Nome: ${team[i].nome}////, Ruolo: ${team[i].ruolo}////, Foto:  <img src="${team[i].foto}" alt="foto" class="img-size">`;
     containerInfo.append(info);
     console.log(containerInfo);
+    info.classList.add('p-mar')
 }
 
 body.append(containerInfo);

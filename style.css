@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.img-size{
+    width: 200px;
+}
+
+.p-mar{
+    margin-bottom: 20px;
+}
