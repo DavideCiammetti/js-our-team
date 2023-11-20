@@ -40,4 +40,10 @@ const team =  [
         'foto': 'barbara-ramos-graphic-designer.jpg'
     }
 ];
-
+// stampo in conosle chiavie valori 
+console.log(team[0]);
+console.log(team[1]);
+console.log(team[2]);
+console.log(team[3]);
+console.log(team[4]);
+console.log(team[5]);
