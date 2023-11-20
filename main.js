@@ -49,15 +49,11 @@ console.log(team[4]);
 console.log(team[5]);
 
 // creo elemeti per aggiungere le info al dom
-const containerInfo = document.createElement('div');
-const body = document.querySelector('body');
+const mainContainer = document.querySelector('.main-container');
 
 for(let i = 0; i < team.length; i++){
-    const info = document.createElement('p');
-    info.innerHTML = `Nome: ${team[i].nome}////, Ruolo: ${team[i].ruolo}////, Foto:  <img src="${team[i].foto}" alt="foto" class="img-size">`;
-    containerInfo.append(info);
-    console.log(containerInfo);
-    info.classList.add('p-mar')
+    const info = document.createElement('div');
+    info.innerHTML = `<img src="${team[i].foto}" alt="foto" class="img-size"> <div class="text-content"><p class="name-col">${team[i].nome} </p><p class="rule-col">${team[i].ruolo}</p></div>`;
+    info.classList.add('p-mar');
+    mainContainer.append(info);
 }
-
-body.append(containerInfo);
